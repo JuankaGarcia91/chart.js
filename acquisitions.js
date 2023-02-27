@@ -1,29 +1,20 @@
-import Chart from 'chart.js/auto'
+const ctx = document.getElementById('acquisitions');
 
-(async function() {
-  const data = [
-    { year: 2010, count: 10 },
-    { year: 2011, count: 20 },
-    { year: 2012, count: 15 },
-    { year: 2013, count: 25 },
-    { year: 2014, count: 22 },
-    { year: 2015, count: 30 },
-    { year: 2016, count: 28 },
-  ];
-
-  new Chart(
-    document.getElementById('acquisitions'),
-    {
-      type: 'bar',
-      data: {
-        labels: data.map(row => row.year),
-        datasets: [
-          {
-            label: 'Balance de la divisa en el año',
-            data: data.map(row => row.count)
-          }
-        ]
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+      datasets: [{
+        label: 'Indice: alza de valor',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  );
-})();
+  });
