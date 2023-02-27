@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Maven+Pro&family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+
+body {
+    background-image: url(/img/binario.jpg);
+    background-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* encabezado*/
+.cuadrott {
+    background: url(/img/binario1.jpg);
+    background-color: aliceblue;    
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    top: 0px;  
+    width: 80%;
+    height: 6rem; 
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.titu {
+    color: white;    
+    font-family: anton;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 3px 5px 10px #000000;
+    margin-top: -5px;
+}
+
+/* area central */
+.cuadro1 {
+    margin-top: 2rem;    
+    width: 95%;
+    background-color: #bdbdbdaa;
+    border-radius: 30px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* cambio divisa */
+.container {
+    width: 80%;
+    background-color: #417d8b;
+    font-family:  'Maven Pro';
+    font-size: 25px;
+    padding: 1rem;
+    border: #b4b4b4 2px solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.txt {
+    padding: 0.1rem;
+}
+
+.btn {
+    color: #b4b4b4;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 5px 12px;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #858585;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 21px;
+    padding: 5px 12px;
+    border: none;
+}
+
+.moneda {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.moneda select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.moneda input{
+    border: 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+.taza-cambio-comtrainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio {
+    color: #e0e0e0;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: -40px;
+    padding: 1rem;
+    border-radius: 40px;
+}
+
+@media (max-width:600px) {
+    .moneda input {
+        width: 200px;
+    }
+}
+
+/* grafico */
+.cuadro3 {   
+    margin-top: 4rem;    
+    width: 80%;
+    background-color: #417d8b;
+    font-family:  'Maven Pro';
+    font-size: 25px;
+    padding: 1rem;
+    border: #b4b4b4 2px solid;
+    border-radius: 40px;
+    display: grid;
+}
+
+.moneda-tres {
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.grafico {
+    background-color: #b4b4b4;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: -6rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 2px 10px #000000;
+}
+
+/* informacion general */
+.cuadro4 {    
+    margin-top: 4rem;
+    width: 80%;
+    background-color: #417d8b;
+    font-family:  'Maven Pro';
+    font-size: 25px;
+    padding: 1rem;
+    border: #b4b4b4 2px solid;
+    border-radius: 40px;
+}
